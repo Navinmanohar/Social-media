@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const API = axios.create({ baseURL: 'https://social-media-2mqn.onrender.com/' });
+const API = axios.create({ baseURL: 'https://social-media-aw1c.onrender.com/' });
 
 export const getMessages = (id) => API.get(`/message/${id}`);
 
