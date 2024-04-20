@@ -34,7 +34,9 @@ mongoose
     .then(() => console.log('MongoDB connected...'))
     .catch(err => console.log(err));
 
-
+app.get("/",(req,res)=>{
+    res.send("Hello i am from server")
+})
 app.use('/auth', AuthRoute);
 app.use('/user', UserRoute)
 app.use('/posts', PostRoute)
